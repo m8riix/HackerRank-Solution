@@ -1,0 +1,8 @@
+def mutate_string(s,i,c):
+    x=list(s)
+    x.insert(i,c)
+    x.pop(i+1)
+    x="".join(x)
+    return x
+
+if __name__ == '__main__':
