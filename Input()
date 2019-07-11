@@ -1,0 +1,9 @@
+val=input().split(" ")
+x=int(val[0])
+k=int(val[1])
+poly = input()
+evalval = (eval(poly))
+if evalval == k:
+    print(True)
+else:
+    print(False)
