@@ -1,0 +1,22 @@
+from decimal import Decimal
+x = int(input(""))
+totalmark = []
+name = []
+initialval = 0
+for i in range(x):
+     y = input().split(" ")
+     for j in range(1,len(y)):
+         initialval = initialval + float(y[j])
+     initialval = initialval/(len(y) - 1)
+     initialval = ("%.2f"%initialval)
+     totalmark.append(initialval)
+     initialval = 0
+     name.append(y[0])
+takename = input()
+if takename in name:
+    getindex = name.index(takename)
+else:
+    print("not valid name")
+# print(totalmark)
+# print(name)
+print(totalmark[getindex])
