@@ -1,0 +1,9 @@
+from itertools import product
+list1 = []
+x = input().split(" ")
+y = input().split(" ")
+prod = product(x,y)
+for iteam in prod:
+    list(iteam).sort()
+    list1 = list(map(int,iteam))
+    print(tuple(list1),end=" ")
