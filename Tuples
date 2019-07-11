@@ -1,0 +1,5 @@
+x=input()
+iteam = input().split(" ")
+iteam = list(map(int,iteam))
+t = tuple(iteam)
+print(hash(t))
