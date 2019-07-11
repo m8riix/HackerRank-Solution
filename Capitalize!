@@ -1,0 +1,19 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+# Complete the solve function below.
+def solve(s):
+    z=s.split(" ")
+    list2 = []
+    for i in z:
+        i = i.capitalize()
+        list2.append(i)
+    list2 = " ".join(list2)
+    return list2
+
+if __name__ == '__main__':
